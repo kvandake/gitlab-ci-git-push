@@ -33,3 +33,4 @@ chmod 600 ~/.ssh/id_rsa
 ssh-keyscan -H $ssh_port "$ssh_host" >> ~/.ssh/known_hosts
 
 git push $url $branch:master $([ -z "$DISABLE_FORCE_PUSH" ] && echo --force)
+
